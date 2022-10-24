@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace Dzejson.Models
 {
-    internal class Student
+    public class Student
     {
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+        public string MotherName { get; set; }
     }
 }
