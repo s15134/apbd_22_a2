@@ -11,5 +11,17 @@ namespace Dzejson.Models
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public string MotherName { get; set; }
+
+        public override bool Equals(object? obj)
+        {
+            return obj is Student student &&
+                   FirstName == student.FirstName &&
+                   LastName == student.LastName;
+        }
+
+        public override int GetHashCode()
+        {
+            return HashCode.Combine(FirstName, LastName);
+        }
     }
 }
