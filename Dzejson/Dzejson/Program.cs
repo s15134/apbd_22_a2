@@ -8,7 +8,7 @@ namespace Dzejson
         static void Main(string[] args)
         {
             //1. Argumenty
-            string LogFile = "log.txt";
+            string LogFile = @".\Data\log.txt";
             //2. Kolekcje
             List<int> list = new List<int>();
             HashSet<int> set = new HashSet<int>();
@@ -23,7 +23,7 @@ namespace Dzejson
             };
 
             //4. Wczytywanie/zapisywanie danych
-            /* 
+            
             try
             {
                 string str = File.ReadAllText(@".\Data\dane.csv");
@@ -54,7 +54,7 @@ namespace Dzejson
             {
 
             }
-            */
+            
             //5. wykorzystanie HashSet
             HashSet<Student> set2 = new HashSet<Student>();
             Student st = new Student();

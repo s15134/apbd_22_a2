@@ -12,6 +12,13 @@ namespace Dzejson.Models
         public string LastName { get; set; }
         public string MotherName { get; set; }
 
+        public string Course { get; set; }
+        public string Mode { get; set; }
+        public string FathersName { get; set; }
+        public string BirthDate { get; set; }
+        public string IndexNumber { get; set; }
+
+
         public override bool Equals(object? obj)
         {
             return obj is Student student &&
